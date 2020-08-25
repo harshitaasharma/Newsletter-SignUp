@@ -30,10 +30,10 @@ app.post("/", function(req, res) {
   };
 
   const jsonData = JSON.stringify(data);
-  const url = "https://us17.api.mailchimp.com/3.0/lists/4438a474cc";
+  const url = "https://usX.api.mailchimp.com/3.0/lists/list_id";
   const options = {
     method: "POST",
-    auth: "mostlyharshita:4b94ba048483186329345b2cf2b967eb-us17"
+    auth: "list_id"
   };
 
 
@@ -66,6 +66,4 @@ app.listen(process.env.PORT || 3000, function() {
 
 
 
-//API KEY: 4b94ba048483186329345b2cf2b967eb-us17
 
-//LIST ID : 4438a474cc
